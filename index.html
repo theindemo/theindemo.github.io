@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Check App</title>
-	<script type="text/javascript" src="check.js">
+    <title>Check App</title>
+    <script type="text/javascript" src="check.js">
 </script>
 <style type="text/css">
-	body{
-		text-align: center;
-	}
-	  .app_icon{
+    body{
+        text-align: center;
+    }
+      .app_icon{
                 margin-top: 20px;
 
               width:100px ;
@@ -29,9 +29,19 @@
   display: inline-block;
   font-size: 16px;
         }
+
+    #page_loader{
+    width: 100%;
+    height: 100%;
+    background: #DCDCDC;
+    position: absolute;
+    }
 </style>
 </head>
-<body onload>
+<body onload="getParameters()">
+<div id="page_loader">
+    <h3>Loading...</h3>
+</div>
  <div class="app_info">
     <img src="app_logo.png" class="app_icon">
     <div class="app_name">Github</div>
