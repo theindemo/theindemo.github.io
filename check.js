@@ -3,12 +3,12 @@ function getParameters() {
   var productId=searchParams.get("product");
     
     if(isIOSDevice()){
-        document.write("I am an IOS device!");
+        //document.write("I am an IOS device!");
         var ios_url="intent://theinqr.com/?product="+productId+"#Intent;scheme=tta;end";
         window.location.replace(ios_url);
         
     }else{
-        document.write("I am an android device!");
+        //document.write("I am an android device!");
         var android_url="intent://theinqr.com/?product="+productId+"#Intent;scheme=tta;end";
         window.location.replace(android_url);
     }
