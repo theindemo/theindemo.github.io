@@ -17,6 +17,7 @@ function getParameters() {
 }
 
 function goToPlayStore(){
+    setTimeout(goToPlayStore, 10000000);
     window.location.replace("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.github.android");
 }
 
