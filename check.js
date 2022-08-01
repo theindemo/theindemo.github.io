@@ -13,7 +13,7 @@ function getParameters() {
         window.location.replace(android_url);
     }
     
-  setTimeout(goToPlayStore, 5000);
+  setTimeout(goToPlayStore, 10000);
 }
 
 function goToPlayStore(){
