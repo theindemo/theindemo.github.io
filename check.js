@@ -13,11 +13,15 @@ function getParameters() {
         window.location.replace(android_url);
     }
     
-  setTimeout(goToPlayStore, 10000000);
+  setTimeout(hideLoading, 10000);
+}
+
+function hideLoading(){
+  var element = document.getElementById("page_loader");
+  element.style.display = "none";
 }
 
 function goToPlayStore(){
-    setTimeout(goToPlayStore, 10000000);
     window.location.replace("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.github.android");
 }
 
