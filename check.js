@@ -1,5 +1,5 @@
 function getParameters() {
-    setTimeout(prepareView, 60000);
+    setTimeout(prepareView, 20000);
 }
 
 function prepareView() {
@@ -15,7 +15,7 @@ function prepareView() {
         window.location.replace(android_url);
     }
 
-    setTimeout(onVisibilityChange, 100);
+    setTimeout(onVisibilityChange, 10000);
 }
 
 
