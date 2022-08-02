@@ -16,7 +16,7 @@ function getParameters() {
         var android_url="intent://theinqr.com/?product="+productId+"#Intent;scheme=tta;end";
         //window.location.replace(android_url);
         
-        setTimeout(function () { window.location = android_url; }, 500);
+        setTimeout(window.location.replace(android_url), 500);
         window.location = "https://theindemo.github.io/pages/download.html";
     }
     
