@@ -1,5 +1,4 @@
 function getParameters() {
-    /Users/theintunaung/Documents/workspace/theindemo.github.io/checkbkbk.js
   const searchParams = new URLSearchParams(window.location.search);
   var productId=searchParams.get("product");
   
@@ -26,7 +25,7 @@ function onVisibilityChange() {
 }
 
 function makeDelay(){
-    setTimeout(getParameters, 5000);
+    setTimeout(getParameters, 500);
    
 }
 
