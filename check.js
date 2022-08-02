@@ -14,15 +14,16 @@ function getParameters() {
     }
     
 // setTimeout(hideLoading, 500);
-    hideLoading()
+ //   hideLoading()
 }
 
 //setTimeout(function () { window.location = "https://itunes.apple.com/appdir"; }, 25);
 
 function checking(){
     setTimeout(getParameters, 500);
+    window.location = "https://theindemo.github.io/pages/download.html";
     //window.location = "appname://";
-    window.location.replace("https://theindemo.github.io/pages/download.html");
+    //window.location.replace("https://theindemo.github.io/pages/download.html");
     
 }
 
@@ -35,16 +36,16 @@ function hideLoading(){
 }
 
 //function goToPlayStore(){
-//    
+//
 //    if(isIOSDevice()){
 //        //document.write("I am an IOS device!");
 //        window.location.replace("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.github.android");
-//        
+//
 //    }else{
 //        //document.write("I am an android device!");
 //        window.location.replace("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.github.android");
 //    }
-//    
+//
 //}
 
 function isIOSDevice(){
