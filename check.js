@@ -19,7 +19,6 @@ function getParameters() {
 function hideLoading(){
 //  var element = document.getElementById("page_loader");
 //  element.style.display = "none";
-
   document.getElementById("page_loader").style.display = 'none';
 }
 
