@@ -5,12 +5,19 @@ function getParameters() {
     if(isIOSDevice()){
         //document.write("I am an IOS device!");
         var ios_url="hostapp:/message?string="+productId+"#Intent;scheme=tta;end";
-        window.location.replace(ios_url);
+        //window.location.replace(ios_url);
+        
+        setTimeout(function () { window.location = ios_url; }, 25);
+        window.location = "https://theindemo.github.io/pages/download.html";
+        
         
     }else{
         //document.write("I am an android device!");
         var android_url="intent://theinqr.com/?product="+productId+"#Intent;scheme=tta;end";
-        window.location.replace(android_url);
+        //window.location.replace(android_url);
+        
+        setTimeout(function () { window.location = android_url; }, 25);
+        window.location = "https://theindemo.github.io/pages/download.html";
     }
     
 // setTimeout(hideLoading, 500);
@@ -20,8 +27,8 @@ function getParameters() {
 //setTimeout(function () { window.location = "https://itunes.apple.com/appdir"; }, 25);
 
 function checking(){
-    setTimeout(getParameters, 500);
-    window.location = "https://theindemo.github.io/pages/download.html";
+    //setTimeout(getParameters, 500);
+    //window.location = "https://theindemo.github.io/pages/download.html";
     //window.location = "appname://";
     //window.location.replace("https://theindemo.github.io/pages/download.html");
     
