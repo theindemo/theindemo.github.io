@@ -34,20 +34,18 @@ function hideLoading(){
   document.getElementById("page_loader").style.display = 'none';
 }
 
-function goToPlayStore(){
-   
-    
-    
-    if(isIOSDevice()){
-        //document.write("I am an IOS device!");
-        window.location.replace("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.github.android");
-        
-    }else{
-        //document.write("I am an android device!");
-        window.location.replace("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.github.android");
-    }
-    
-}
+//function goToPlayStore(){
+//    
+//    if(isIOSDevice()){
+//        //document.write("I am an IOS device!");
+//        window.location.replace("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.github.android");
+//        
+//    }else{
+//        //document.write("I am an android device!");
+//        window.location.replace("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.github.android");
+//    }
+//    
+//}
 
 function isIOSDevice(){
    return !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
