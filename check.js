@@ -12,7 +12,7 @@ function getParameters() {
         var android_url="intent://theinqr.com/?product="+productId+"#Intent;scheme=tta;end";
         window.location.replace(android_url);
     }
-    document.addEventListener('visibilitychange', onVisibilityChange);
+    //document.addEventListener('visibilitychange', onVisibilityChange);
 }
 
 function onVisibilityChange() {
