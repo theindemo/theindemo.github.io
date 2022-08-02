@@ -34,7 +34,18 @@ function hideLoading(){
 }
 
 function goToPlayStore(){
-    window.location.replace("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.github.android");
+   
+    
+    
+    if(isIOSDevice()){
+        //document.write("I am an IOS device!");
+        window.location.replace("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.github.android");
+        
+    }else{
+        //document.write("I am an android device!");
+        window.location.replace("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.github.android");
+    }
+    
 }
 
 function isIOSDevice(){
