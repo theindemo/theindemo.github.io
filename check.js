@@ -44,17 +44,17 @@ function onVisibilityChange() {
 
 
 function checking(){
-    //setTimeout(getParameters, 500);
+    setTimeout(getParameters, 500);
     //window.location = "https://theindemo.github.io/pages/download.html";
     //window.location = "appname://";
     //window.location.replace("https://theindemo.github.io/pages/download.html");
-    
 }
+
 
 function hideLoading(){
 //  var element = document.getElementById("page_loader");
 //  element.style.display = "none";
-  document.getElementById("page_loader").style.display = 'none';
+//  document.getElementById("page_loader").style.display = 'none';
 }
 
 //function goToPlayStore(){
