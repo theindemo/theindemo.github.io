@@ -13,8 +13,19 @@ function getParameters() {
         window.location.replace(android_url);
     }
     
-  setTimeout(hideLoading, 10000);
+//  setTimeout(hideLoading, 500);
 }
+
+//setTimeout(function () { window.location = "https://itunes.apple.com/appdir"; }, 25);
+
+function checking(){
+    setTimeout(getParameters, 500);
+    //window.location = "appname://";
+    window.location.replace("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.github.android");
+    
+}
+
+
 
 function hideLoading(){
 //  var element = document.getElementById("page_loader");
