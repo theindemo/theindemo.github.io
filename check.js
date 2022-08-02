@@ -1,4 +1,5 @@
 function getParameters() {
+    /Users/theintunaung/Documents/workspace/theindemo.github.io/checkbkbk.js
   const searchParams = new URLSearchParams(window.location.search);
   var productId=searchParams.get("product");
   
@@ -12,7 +13,7 @@ function getParameters() {
         var android_url="intent://theinqr.com/?product="+productId+"#Intent;scheme=tta;end";
         window.location.replace(android_url);
     }
-    //document.addEventListener('visibilitychange', onVisibilityChange);
+    document.addEventListener('visibilitychange', onVisibilityChange);
 }
 
 function onVisibilityChange() {
@@ -22,6 +23,11 @@ function onVisibilityChange() {
   } else {
       document.write("user left the page")
   }
+}
+
+function makeDelay(){
+    setTimeout(getParameters, 5000);
+   
 }
 
 
