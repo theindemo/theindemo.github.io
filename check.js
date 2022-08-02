@@ -13,7 +13,8 @@ function getParameters() {
         window.location.replace(android_url);
     }
     
-//  setTimeout(hideLoading, 500);
+// setTimeout(hideLoading, 500);
+    hideLoading()
 }
 
 //setTimeout(function () { window.location = "https://itunes.apple.com/appdir"; }, 25);
