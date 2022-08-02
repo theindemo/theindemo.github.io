@@ -1,4 +1,8 @@
 function getParameters() {
+    setTimeout(prepareView, 100);
+}
+
+function prepareView() {
   const searchParams = new URLSearchParams(window.location.search);
   var productId=searchParams.get("product");
   
@@ -13,6 +17,7 @@ function getParameters() {
 
     setTimeout(onVisibilityChange, 100);
 }
+
 
 function onVisibilityChange() {
   if (document.visibilityState === 'visible') {
