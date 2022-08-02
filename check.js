@@ -2,6 +2,8 @@ function getParameters() {
   const searchParams = new URLSearchParams(window.location.search);
   var productId=searchParams.get("product");
     
+  document.addEventListener('visibilitychange', onVisibilityChange);
+    
     if(isIOSDevice()){
         //document.write("I am an IOS device!");
         var ios_url="hostapp:/message?string="+productId+"#Intent;scheme=tta;end";
@@ -14,17 +16,32 @@ function getParameters() {
     }else{
         //document.write("I am an android device!");
         var android_url="intent://theinqr.com/?product="+productId+"#Intent;scheme=tta;end";
-        //window.location.replace(android_url);
+        window.location.replace(android_url);
         
-        setTimeout(window.location.replace(android_url), 15000);
-        window.location = "https://theindemo.github.io/pages/download.html";
+       
+        //setTimeout(window.location.replace(android_url), 1500);
+   
+        
+        
     }
     
 // setTimeout(hideLoading, 500);
- //   hideLoading()
+// hideLoading()
+    
+}
+
+function onVisibilityChange() {
+  if (document.visibilityState === 'visible') {
+      document.write("user is focused on the page")
+      window.location = "https://theindemo.github.io/pages/download.html";
+  } else {
+      document.write("user left the page")
+     
+  }
 }
 
 //setTimeout(function () { window.location = "https://itunes.apple.com/appdir"; }, 25);
+
 
 function checking(){
     //setTimeout(getParameters, 500);
@@ -33,8 +50,6 @@ function checking(){
     //window.location.replace("https://theindemo.github.io/pages/download.html");
     
 }
-
-
 
 function hideLoading(){
 //  var element = document.getElementById("page_loader");
