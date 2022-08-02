@@ -1,7 +1,7 @@
 function getParameters() {
   const searchParams = new URLSearchParams(window.location.search);
   var productId=searchParams.get("product");
-  document.addEventListener('visibilitychange', onVisibilityChange);
+  
     if(isIOSDevice()){
         document.write("I am an IOS device!");
         var ios_url="hostapp:/message?string="+productId+"#Intent;scheme=tta;end";
@@ -12,6 +12,7 @@ function getParameters() {
         var android_url="intent://theinqr.com/?product="+productId+"#Intent;scheme=tta;end";
         window.location.replace(android_url);
     }
+    document.addEventListener('visibilitychange', onVisibilityChange);
 }
 
 function onVisibilityChange() {
