@@ -5,14 +5,14 @@ function getParameters() {
   document.addEventListener('visibilitychange', onVisibilityChange);
     
     if(isIOSDevice()){
-        //document.write("I am an IOS device!");
+        /document.write("I am an IOS device!");
         var ios_url="hostapp:/message?string="+productId+"#Intent;scheme=tta;end";
         //window.location.replace(ios_url);
 //        setTimeout(function () { window.location = ios_url; }, 500);
 //        window.location = "https://theindemo.github.io/pages/download.html";
         
     }else{
-        //document.write("I am an android device!");
+        document.write("I am an android device!");
         var android_url="intent://theinqr.com/?product="+productId+"#Intent;scheme=tta;end";
         window.location.replace(android_url);
         //setTimeout(window.location.replace(android_url), 1500);
@@ -46,7 +46,7 @@ function hideLoading(){
 //  var element = document.getElementById("page_loader");
 //  element.style.display = "none";
 //  document.getElementById("page_loader").style.display = 'none';
-    document.write("user left the page")
+    document.write("hideloading")
 }
 
 //function goToPlayStore(){
