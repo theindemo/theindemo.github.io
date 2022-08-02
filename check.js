@@ -21,7 +21,7 @@ function getParameters() {
 function checking(){
     setTimeout(getParameters, 500);
     //window.location = "appname://";
-    window.location.replace("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.github.android");
+    window.location.replace("https://theindemo.github.io/pages/download.html");
     
 }
 
