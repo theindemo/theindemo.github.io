@@ -17,6 +17,7 @@ function getParameters() {
 }
 
 function onVisibilityChange() {
+    document.write("onVisibilityChange")
   if (document.visibilityState === 'visible') {
       document.write("user is focused on the page")
       window.location = "https://theindemo.github.io/pages/download.html";
@@ -26,6 +27,7 @@ function onVisibilityChange() {
 }
 
 function makeDelay(){
+    document.write("makeDelay")
     setTimeout(getParameters, 500);
    
 }
