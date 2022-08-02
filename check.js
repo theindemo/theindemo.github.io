@@ -13,7 +13,7 @@ function getParameters() {
         window.location.replace(android_url);
     }
 
-    setTimeout(onVisibilityChange, 500);
+    setTimeout(onVisibilityChange, 100);
 }
 
 function onVisibilityChange() {
@@ -28,7 +28,7 @@ function onVisibilityChange() {
 
 function makeDelay(){
     document.write("makeDelay")
-    setTimeout(getParameters, 500);
+    setTimeout(getParameters, 100);
    
 }
 
