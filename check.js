@@ -1,5 +1,5 @@
 function getParameters() {
-    setTimeout(prepareView, 100);
+    setTimeout(prepareView, 300);
 }
 
 function prepareView() {
