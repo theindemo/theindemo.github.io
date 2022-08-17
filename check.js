@@ -21,7 +21,7 @@ function prepareView() {
 
 function onVisibilityChange() {
   if (document.visibilityState === 'visible') {
-      window.location.replace = "https://theindemo.github.io/pages/download.html";
+      window.location.replace ("https://theindemo.github.io/pages/download.html");
   } else {
       document.write("user left the page")
   }
