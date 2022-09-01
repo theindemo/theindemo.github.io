@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Check App</title>
-    <script type="text/javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Philips TV Remote</title>
+    <script>
         
         function checkingWhereTogo(){
             
             if(isCheckingIOSDevice()){
-                //document.write("I am an IOS device!");
                 window.location.replace("https://apps.apple.com/be/app/philips-tv-remote/id1479155903");
                 
             }else{
-                //document.write("I am an android device!");
                 window.location.replace("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.tpvision.philipstvapp2");
             }
             
@@ -50,6 +49,7 @@
       text-align: center;
       padding: 10px;
       font-size: 50px;
+      font-family: CentraleSans;
     }
     
     img {
@@ -57,13 +57,6 @@
       margin-left: auto;
       margin-right: auto;
     }
-    
-    body_text_font {
-        font-size: 26px;
-        font-family: CentraleSans;
-    }
-    
-
         
 </style>
     
@@ -73,7 +66,7 @@
 
 <p class="ex1"> </p>
 
-<img src="PhilipsAppIcon.png" alt="Paris" style="width:50%;">
+<img src="philips-app-icon.png" alt="" style="width:50%;">
 
 <p class="ex2"> </p>
 
@@ -82,17 +75,17 @@
 <p class="ex3"> </p>
 
 <div onclick="goToAppStore()">
-    <img src="Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="download" style="width:44%;">
+    <img src="download-on-the-app-store-badge-us-uk-rgb-blk-092917.svg" alt="Download on the App Store" style="width:44%;">
 </div>
 
 <p class="ex3"> </p>
 
 <div onclick="goToPlayStore()">
-    <img src="google-play-badge.png" alt="download" style="width:50%;">
+    <img src="google-play-badge.png" alt="Get it on Google Play" style="width:50%;">
 </div>
 
 <p class="ex4"> </p>
-<div class="center">Step 2: Please scan QR code from TV with your phone's camera app after installing the Philips TV Remote application.</div>
+<div class="center">Step 2: Please scan the QR code shown on the TV with your phone's camera app after installing the Philips TV Remote application.</div>
 
 <p class="ex4"> </p>
 

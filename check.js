@@ -15,7 +15,7 @@ function prepareView() {
         window.location.replace(android_url);
     }
 
-    setTimeout(onVisibilityChange, 1000);
+    setTimeout(onVisibilityChange, 1500);
 }
 
 
@@ -23,7 +23,7 @@ function onVisibilityChange() {
   if (document.visibilityState === 'visible') {
       window.location.replace ("https://theindemo.github.io/pages/download.html");
   } else {
-      document.write("user left the page")
+      document.write(" ")
   }
 }
 
