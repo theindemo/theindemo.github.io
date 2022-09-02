@@ -15,7 +15,7 @@ function prepareView() {
         window.location.replace(android_url);
     }
 
-    setTimeout(onVisibilityChange, 1500);
+    setTimeout(onVisibilityChange, 2500);
 }
 
 
