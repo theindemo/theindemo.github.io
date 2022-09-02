@@ -23,7 +23,7 @@ function onVisibilityChange() {
   if (document.visibilityState === 'visible') {
       window.location.replace ("https://theindemo.github.io/pages/download.html");
   } else {
-      document.write(" ")
+      document.write("Stay")
   }
 }
 
