@@ -12,7 +12,7 @@ function prepareView() {
         
     }else{
         //var android_url="intent://theinqr.com/?product="+productId+"#Intent;scheme=tta;end";
-        var android_url="intent://apps.nettvservices.com/downloadpta?atpqr"+productId+"#Intent;scheme=tta;end";
+        var android_url="intent://apps.nettvservices.com/downloadpta/?atpqr"+productId+"#Intent;scheme=tta;end";
  
         window.location.replace(android_url);
     }
