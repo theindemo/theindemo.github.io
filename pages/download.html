@@ -7,7 +7,7 @@
         
         function checkingWhereTogo(){
             
-            if(isCheckingIOSDevice()){
+            if(iOS()){
                 window.location.replace("https://apps.apple.com/be/app/philips-tv-remote/id1479155903");
                 
             }else{
@@ -27,11 +27,23 @@
         function isCheckingIOSDevice(){
            return !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
         }
+        
+        function iOS() {
+          return [
+            'iPad Simulator',
+            'iPhone Simulator',
+            'iPod Simulator',
+            'iPad',
+            'iPhone',
+            'iPod'
+          ].includes(navigator.platform)
+          // iPad on iOS 13 detection
+          || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+        }
 </script>
 
 
 <style>
-    
     p.ex1 {
       margin-top: 150px;
     }
@@ -48,7 +60,7 @@
     .center {
       text-align: center;
       padding: 10px;
-      font-size: 50px;
+      font-size: 20px;
       font-family: CentraleSans;
     }
     
@@ -57,7 +69,6 @@
       margin-left: auto;
       margin-right: auto;
     }
-        
 </style>
     
 
