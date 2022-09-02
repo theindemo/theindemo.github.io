@@ -4,7 +4,7 @@ function getParameters() {
 
 function prepareView() {
   const searchParams = new URLSearchParams(window.location.search);
-  var productId=searchParams.get("product");
+  var productId=searchParams.get("data");
   
     if(isIOSDevice()){
         var ios_url="hostapp:/message?string="+productId+"#Intent;scheme=tta;end";
