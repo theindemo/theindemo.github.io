@@ -7,7 +7,7 @@ function prepareView() {
   var productId=searchParams.get("data");
   
     if(isIOSDevice()){
-        var ios_url="tpvptatwo:/message?data="+productId+"#Intent;scheme=tta;end";
+        var ios_url="getqrdataviapta.com:/message?data="+productId+"#Intent;scheme=tpvptatwo;end";
         window.location.replace(ios_url);
         
     }else{
