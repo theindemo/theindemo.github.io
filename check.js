@@ -11,11 +11,10 @@ function prepareView() {
         window.location.replace(ios_url);
         
     }else{
-        var android_url="intent://apps.nettvservices.com/downloadpta/?atpqr"+productId+"#Intent;scheme=pta2qr;end";
+        var android_url="intent://getqrdataviapta.com/?atpqr"+productId+"#Intent;scheme=tpvptatwo;end";
  
         window.location.replace(android_url);
     }
-
     setTimeout(onVisibilityChange, 2500);
 }
 
