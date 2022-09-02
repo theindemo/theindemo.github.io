@@ -11,7 +11,7 @@ function prepareView() {
         window.location.replace(ios_url);
         
     }else{
-        var android_url="intent://getqrdataviapta.com/?data="+productId+"#Intent;scheme=tpvptatwo;end";
+        var android_url="intent://getqrdataviapta.com/?data=="+productId+"#Intent;scheme=tpvptatwo;end";
  
         window.location.replace(android_url);
     }
