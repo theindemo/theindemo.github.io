@@ -19,7 +19,6 @@ function prepareView() {
     setTimeout(onVisibilityChange, 2500);
 }
 
-
 function onVisibilityChange() {
   if (document.visibilityState === 'visible') {
       window.location.replace ("https://theindemo.github.io/pages/download.html");
@@ -27,7 +26,6 @@ function onVisibilityChange() {
       document.write(" ")
   }
 }
-
 
 function isIOSDevice(){
    return !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
