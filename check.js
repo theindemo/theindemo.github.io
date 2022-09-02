@@ -11,8 +11,7 @@ function prepareView() {
         window.location.replace(ios_url);
         
     }else{
-        //var android_url="intent://theinqr.com/?product="+productId+"#Intent;scheme=tta;end";
-        var android_url="intent://apps.nettvservices.com/downloadpta/?atpqr"+productId+"#Intent;scheme=tta;end";
+        var android_url="intent://apps.nettvservices.com/downloadpta/?atpqr"+productId+"#Intent;scheme=pta2qr;end";
  
         window.location.replace(android_url);
     }
