@@ -7,9 +7,9 @@ function prepareView() {
   var productId=searchParams.get("data");
   
     if(isIOSDevice()){
-//        var ios_url="getqrdataviapta.com:/data?qrdata="+productId+"#Intent;scheme=tpvptatwo;end";
-        var ios_url="hostapp.com:/message?string="+productId+"#Intent;scheme=tta;end";
-        window.location.replace(ios_url);
+        var ios_url="getqrdataviapta.com:/data?qrdata="+productId+"#Intent;scheme=tpvptatwo;end";
+//        var ios_url="hostapp.com:/message?string="+productId+"#Intent;scheme=tta;end";
+//        window.location.replace(ios_url);
         
     }else{
         var android_url="intent://getqrdataviapta.com/?data=="+productId+"#Intent;scheme=tpvptatwo;end";
