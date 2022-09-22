@@ -5,6 +5,18 @@
     <title>Philips TV Remote</title>
     <script>
         
+        function checkingDevice(){
+            
+            if(iOS()){
+               var playStore = document.getElementById("playStore");
+               playStore.style.display="block";
+            }else{
+                var appStore = document.getElementById("appStore");
+                appStore.style.display="block";
+            }
+            
+        }
+        
         function checkingWhereTogo(){
             
             if(iOS()){
@@ -73,7 +85,7 @@
     
 
 </head>
-<body>
+<body onload="checkingDevice()">
 
 <p class="ex1"> </p>
 
@@ -85,13 +97,13 @@
 
 <p class="ex3"> </p>
 
-<div onclick="goToAppStore()">
+<div id="appStore" onclick="goToAppStore()">
     <img src="./download-on-the-app-store-badge-us-uk-rgb-blk-092917.svg" alt="Download on the App Store" style="width:44%;">
 </div>
 
 <p class="ex3"> </p>
 
-<div onclick="goToPlayStore()">
+<div id="playStore" onclick="goToPlayStore()">
     <img src="./google-play-badge.png" alt="Get it on Google Play" style="width:50%;">
 </div>
 
