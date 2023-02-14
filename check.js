@@ -51,28 +51,26 @@ function detectLang(){
               pta2label2="U wordt automatisch doorgestuurd naar de Philips TV Remote App als deze al is geïnstalleerd.";
           break;
         case "es":
-                pta2label1="Estamos comprobando si la aplicación Philips TV Remote está instalada en su dispositivo.";
-                pta2label2="Si ya está instalada, accederá automáticamente a la aplicación Philips TV Remote.";
-                break;
+              pta2label1="Estamos comprobando si la aplicación Philips TV Remote está instalada en su dispositivo.";
+              pta2label2="Si ya está instalada, accederá automáticamente a la aplicación Philips TV Remote.";
+          break;
         case "fr":
               pta2label1="Nous vérifions actuellement si l'application Philips TV Remote est installée sur votre appareil.";
               pta2label2="Vous pourrez accéder automatiquement à l'application Philips TV Remote si elle est déjà installée.";
-                break;
+          break;
         case "it":
               pta2label1="È in corso la verifica dell'installazione dell'applicazione Philips TV Remote sul dispositivo.";
               pta2label2="Se è già installata, si procede automaticamente all'applicazione Philips TV Remote.";
-                break;
+          break;
         case "pt":
-                pta2label1="Neste momento, estamos a verificar se a aplicação Philips TV Remote está instalada no seu dispositivo.";
-                pta2label2="Se já estiver instalada, a aplicação Philips TV Remote será automaticamente aberta.";
-                break;
+              pta2label1="Neste momento, estamos a verificar se a aplicação Philips TV Remote está instalada no seu dispositivo.";
+              pta2label2="Se já estiver instalada, a aplicação Philips TV Remote será automaticamente aberta.";
+          break;
         case "ru":
               pta2label1="Мы проверяем наличие установленного приложения Philips TV Remote на вашем устройстве.";
               pta2label2="Если оно установлено, приложение Philips TV Remote откроется автоматически.";
           break;
-            
     }
     document.getElementById("pta2label1").innerHTML = pta2label1;
     document.getElementById("pta2label2").innerHTML = pta2label2;
-    
 }
