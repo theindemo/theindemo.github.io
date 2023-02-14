@@ -29,10 +29,21 @@
                 margin-left: auto;
                 margin-right: auto;
             }
+            
+            #app_loader{
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         </style>
         
 </head>
 <body onload="getParameters()">
+    
+    <div id="app_loader">
+        <img class="center" src="./pages/spin.gif" style="width:44%;">
+    </div>
     
     <p class="ex1"> </p>
     <div class="center"><p id="pta2label1"></p></div>
