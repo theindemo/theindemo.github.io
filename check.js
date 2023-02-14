@@ -72,7 +72,7 @@ function detectLang(){
           break;
             
     }
-    document.getElementById("pta2label1").innerText = pta2label1;
-    document.getElementById("pta2label2").innerText = pta2label2;
+    document.getElementById("pta2label1").innerHTML = pta2label1;
+    document.getElementById("pta2label2").innerHTML = pta2label2;
     
 }
