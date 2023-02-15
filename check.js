@@ -36,7 +36,7 @@ function detectLang(){
     let pta2label2="You will automatically proceed to the Philips TV Remote application if it is already installed.";
     
     
-    var userLang = navigator.language || navigator.userLanguage;
+    var userLang = navigator.language.toLowerCase()
     switch(userLang) {
         case "en":
               pta2label1="We are currently checking if the Philips TV Remote application is installed on your device.";
