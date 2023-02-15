@@ -69,6 +69,7 @@ function detectLang(){
               pta2label2="Se já estiver instalada, a aplicação Philips TV Remote será automaticamente aberta.";
           break;
         case "ru":
+        case "ru-ru":
               pta2label1="Мы проверяем наличие установленного приложения Philips TV Remote на вашем устройстве.";
               pta2label2="Если оно установлено, приложение Philips TV Remote откроется автоматически.";
           break;
