@@ -62,7 +62,7 @@
             let downloadlabel1="Step 1: Please download and install the Philips TV Remote application.";
             let downloadlabel2="Step 2: Please scan the QR code from the TV with your mobile device after installing the Philips TV Remote application.";
             
-            var userLang = navigator.language || navigator.userLanguage;
+            var userLang = navigator.language.toLowerCase()
             switch(userLang) {
                 case "en":
                       downloadlabel1="Step 1: Please download and install the Philips TV Remote application.";
