@@ -64,7 +64,7 @@ function detectLang(){
               pta2label1="È in corso la verifica dell'installazione dell'applicazione Philips TV Remote sul dispositivo.";
               pta2label2="Se è già installata, si procede automaticamente all'applicazione Philips TV Remote.";
           break;
-        case "pt":
+        case "pt-br":
               pta2label1="Neste momento, estamos a verificar se a aplicação Philips TV Remote está instalada no seu dispositivo.";
               pta2label2="Se já estiver instalada, a aplicação Philips TV Remote será automaticamente aberta.";
           break;
