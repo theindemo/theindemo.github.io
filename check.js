@@ -37,8 +37,7 @@ function detectLang(){
     
     
     var userLang = navigator.language.toLowerCase()
-    document.getElementById("userLang").innerHTML = userLang;
-    
+
     switch(userLang) {
         case "en":
               pta2label1="We are currently checking if the Philips TV Remote application is installed on your device.";
